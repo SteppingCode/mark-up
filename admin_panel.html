@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/admin_panel.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="border-menu">
+        <div class="upper-section">
+            <div>
+                <button type="button">New project</button>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div>
+                <button type="button">My project</button>
+            </div>
+            <div>
+                <button type="button" onclick="document.getElementById('modal').showModal()">Add furniture</button>
+            </div>
+            <div>
+                <button type="button">Furniture list</button>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="list">
+            <div class="furniture-card">
+                <p>Sofa</p>
+                <img alt=""
+                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cookesfurniture.co.uk%2Fimages%2Fproducts%2Flarge%2F3893.jpg&f=1&nofb=1&ipt=56c3b245123a55d0f298536382545d3f057f6f516a5a0604da3b91c814c72469&ipo=images">
+                <p>Price: $100</p>
+            </div>
+            <div class="furniture-card">
+                <p>Sofa</p>
+                <img alt=""
+                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cookesfurniture.co.uk%2Fimages%2Fproducts%2Flarge%2F3893.jpg&f=1&nofb=1&ipt=56c3b245123a55d0f298536382545d3f057f6f516a5a0604da3b91c814c72469&ipo=images">
+                <p>Price: $100</p>
+            </div>
+            <div class="furniture-card">
+                <p>Sofa</p>
+                <img alt=""
+                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cookesfurniture.co.uk%2Fimages%2Fproducts%2Flarge%2F3893.jpg&f=1&nofb=1&ipt=56c3b245123a55d0f298536382545d3f057f6f516a5a0604da3b91c814c72469&ipo=images">
+                <p>Price: $100</p>
+            </div>
+            <div class="furniture-card">
+                <p>Sofa</p>
+                <img alt=""
+                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cookesfurniture.co.uk%2Fimages%2Fproducts%2Flarge%2F3893.jpg&f=1&nofb=1&ipt=56c3b245123a55d0f298536382545d3f057f6f516a5a0604da3b91c814c72469&ipo=images">
+                <p>Price: $100</p>
+            </div>
+        </div>
+        <div class="page-encounter">
+            <div class="page-number selected">1</div>
+        </div>
+    </div>
+    <dialog id="modal" class="create_furniture">
+        <div class="modal-inner">
+            <div>
+                <label for="name">Name</label><input type="text" id="name">
+            </div>
+            <div>
+                <label for="price">Price</label><input type="number" id="price"></div>
+            <div>
+                <label for="image">Image</label><input type="file" id="image"></div>
+            <div>
+                <button type="button" onclick="document.getElementById('modal').close();">Create</button>
+            </div>
+        </div>
+    </dialog>
+</div>
+</body>
+</html>

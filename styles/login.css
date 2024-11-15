@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    input {
+        border: transparent;
+        outline: transparent;
+        border-radius: .4rem;
+        padding: .8rem;
+        background: lightgray;
+
+        &:focus {
+            border-radius: .5rem;
+            transition: .2s ease-in-out;
+            outline: black solid;
+        }
+    }
+
+    button {
+        border: none;
+        outline: none;
+        border-radius: .5rem;
+        padding: .8rem;
+        background: black;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
